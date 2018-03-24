@@ -177,7 +177,7 @@ SquidLoggerManager.textFormatter = MyTextFormatter()
 
 implement `SquidLogStreaming.makeLogText` method.
 
-````swift
+```swift
 struct ConsoleLogger: SquidLogStreaming {
     func makeLogText<T>(_ params: SquidLogParameter<T>) -> String? {
         return "\(params.level):\(params.object)"
@@ -209,7 +209,7 @@ IkaLogger.warn("hello world.")
 ## About filtering of log level
 
 |Final Level|SquidLogManager.<br>defaultLogLevel|SquidLogger.<br>logLevel|SquidLogStreaming.<br>logLevel|
-|---|---|---|
+|---|---|---|---|
 |**debug**|**debug**|nil|nil|
 |**info**|debug|**info**|nil|
 |**warn**|debug|nil|**warn**|
