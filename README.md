@@ -1,5 +1,5 @@
 # SquidLogger
-SquidLogger is a multicast logger to multiple logs on Swift.
+SquidLogger is a multicast logger written in Swift that send to multiple logs.
 
 
 ```swift
